@@ -1,0 +1,145 @@
+\documentclass[a4paper, 12pt]{article}
+
+
+\usepackage{biblatex}
+\addbibresource{main.bib}
+\usepackage{blindtext}
+\usepackage{amsmath}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{multicol,lipsum}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+
+\graphicspath{./images}
+
+\usepackage{subfiles}
+
+\begin{document}
+%\maketitle
+
+\def\nome{San Thiago Teixeira de Barros}
+\def\orientador{Dr. Clemilson}
+\def\projeto{Laboratório de Computação Física}
+\def\relatorio{Relatório Técnico Mensal}
+\def\mes{Outubro}
+
+\begin{titlepage}
+	\begin{center}
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=0.5\textwidth]{images/logo.png}
+        \end{figure}
+		\large{\projeto}\\ 
+		\vspace{15pt}
+        \vspace{95pt}
+        \textbf{\LARGE{\relatorio}}\\
+		%\title{{\large{Título}}}
+		\vspace{3,5cm}
+	\end{center}
+	
+	\begin{flushleft}
+		\begin{tabbing}
+			Aluno: \nome\\
+			Professor orientador: \orientador\\
+	\end{tabbing}
+ \end{flushleft}
+	\vspace{1cm}
+	
+	\begin{center}
+		\vspace{\fill}
+			 \mes\\
+		 2023
+			\end{center}
+\end{titlepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% % % % % % % % %FOLHA DE ROSTO % % % % % % % % % %
+
+\begin{titlepage}
+	\begin{center}
+	
+	%\begin{figure}[!ht]
+	%\centering
+	%\includegraphics[width=2cm]{c:/ufba.jpg}
+	%\end{figure}
+
+		\Huge{Universidade Federal do Ceará}\\
+		\large{\projeto}\\ 
+		 
+\vspace{15pt}
+        
+        \vspace{85pt}
+        
+		\textbf{\LARGE{\relatorio}}
+		\title{\large{\titulo}}
+	%	\large{Modelo\\
+     %   		Validação do modelo clássico}
+			
+	\end{center}
+\vspace{1,5cm}
+	
+	\begin{flushright}
+
+   \begin{list}{}{
+      \setlength{\leftmargin}{4.5cm}
+      \setlength{\rightmargin}{0cm}
+      \setlength{\labelwidth}{0pt}
+      \setlength{\labelsep}{\leftmargin}}
+
+      \item Relatório Técnico de Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non
+    justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus. Donec aliquet, tortor
+    sed accumsan bibendum, erat ligula aliquet magna, vitae ornare odio metus a mi.
+
+      \begin{list}{}{
+      \setlength{\leftmargin}{0cm}
+      \setlength{\rightmargin}{0cm}
+      \setlength{\labelwidth}{0pt}
+      \setlength{\labelsep}{\leftmargin}}
+
+			\item Aluno: \nome
+            \item Professor orientador: \orientador\
+
+      \end{list}
+   \end{list}
+\end{flushright}
+\vspace{1cm}
+\begin{center}
+		\vspace{\fill}
+		 \mes\\
+		 2023
+			\end{center}
+\end{titlepage}
+\newpage
+% % % % % % % % % % % % % % % % % % % % % % % % % %
+\newpage
+\tableofcontents
+\thispagestyle{empty}
+
+\newpage
+\pagenumbering{arabic}
+% % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\subfile{textuais/introducao.tex}
+\newpage
+
+\subfile{textuais/desenvolvimento.tex}
+\newpage
+
+\subfile{textuais/resultados.tex}
+\newpage
+
+\subfile{textuais/conclusao}
+\newpage
+
+\subfile{pos-textuais/referencias.tex}
+\newpage
+
+\subfile{pos-textuais/anexos.tex}
+\end{document}
+
+
